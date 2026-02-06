@@ -82,7 +82,19 @@
             transition: all 0.3s ease;
             font-family: 'Montserrat', sans-serif;
         }
-        
+        /* took this from a tutorial for back side circle */
+        .left::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
